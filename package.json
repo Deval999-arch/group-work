@@ -1,0 +1,32 @@
+{
+  "name": "scholarfund",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Direct university scholarship and academic micro-sponsorship full-stack platform",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:api": "node --watch server/index.cjs",
+    "dev:web": "vite --host 0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "test:security": "node --test server/policies.test.cjs",
+    "start": "node server/index.cjs"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "better-sqlite3": "^12.2.0",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-session": "^1.18.2",
+    "helmet": "^8.1.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.11"
+  }
+}

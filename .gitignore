@@ -1,0 +1,19 @@
+# Dependencies & package caches
+node_modules/
+.npm/
+.cache/
+
+# Runtime SQLite databases & local uploads
+data/
+public/images/uploads/
+uploads/
+
+# Ephemeral Vite default output & exported archives
+dist/
+*.zip
+
+# Environment & OS metadata
+.env
+.env.*
+.DS_Store
+Thumbs.db
